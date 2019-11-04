@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "testpushpull",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authtestpushpullc4e3121e",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
